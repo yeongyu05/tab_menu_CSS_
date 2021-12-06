@@ -1,0 +1,54 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.tabmenu {
+    position: relative;
+}
+.tabmenu ul li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    line-height: 40px;
+}
+.tabmenu label {
+    display: block;
+}
+.tabmenu input {
+    display: none;
+}
+.tabCon {
+    display: none;
+    text-align: center;
+    line-height: 300px;
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    font-size: 50px;
+}
+.tabmenu input:checked ~ .tabCon {
+    display: block;
+}
+#tab1 > .tabCon {
+    background: rgb(255, 0, 0);
+}
+#tab2 > .tabCon {
+    background: rgb(0, 0, 255);
+}
+#tab3 > .tabCon {
+    background: rgb(0, 255, 0);
+}
+#tab4 > .tabCon {
+    background: rgb(255, 255, 0);
+}
